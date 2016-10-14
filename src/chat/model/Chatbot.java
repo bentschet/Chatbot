@@ -21,7 +21,8 @@ public class Chatbot
 	 */
 	public Chatbot(String userName)
 	{
-		
+		this.memesList = new ArrayList<String>();
+		this.userName = new String(userName);
 	}
 	
 	private void buildMemesList()
