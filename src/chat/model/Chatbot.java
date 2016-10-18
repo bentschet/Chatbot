@@ -23,6 +23,7 @@ public class Chatbot
 	{
 		this.memesList = new ArrayList<String>();
 		this.userName = new String(userName);
+		this.content = new String("DK: DONKEY KONG");
 	}
 	
 	private void buildMemesList()
