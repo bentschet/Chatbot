@@ -23,7 +23,7 @@ public class Chatbot
 	{
 		this.memesList = new ArrayList<String>();
 		this.userName = new String(userName);
-		this.content = new String("Linguistics");
+		this.content = new String("Language");
 		this.buildMemesList();
 		
 	}
@@ -62,7 +62,13 @@ public class Chatbot
 	 */
 	public boolean contentChecker(String currentInput)
 	{
-		return false;
+		boolean hasContent = false;
+		
+		if (currentInput != null && currentInput.contains("Language"))
+		{
+			hasContent = true;
+		}
+		return hasContent;
 	}
 	
 	/**
@@ -73,7 +79,9 @@ public class Chatbot
 	 */
 	public boolean politicalTopicChecker(String currentInput)
 	{
-		return false;
+		boolean hasPoliticalTopic = false;
+		
+		return hasPoliticalTopic;
 	}
 	
 	
@@ -84,7 +92,9 @@ public class Chatbot
 	 */
 	public boolean memeChecker(String currentInput)
 	{
-		return false;
+		boolean hasMeme = false;
+		
+		return hasMeme;
 	}
 	
 	/**
