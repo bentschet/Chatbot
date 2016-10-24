@@ -120,7 +120,7 @@ public class ChatbotTest
 		assertTrue("Meme Topic check", sampleBot.getMemesList().contains("vaporwave"));
 		assertTrue("Meme Topic check", sampleBot.getMemesList().contains("ratatoing"));
 		assertFalse("Meme Topic check", sampleBot.getMemesList().contains("ratatouille"));
-		
+		assertTrue("Meme Topic check", sampleBot.getMemesList().contains("DJ Khaled"));
 	}
 	
 	@Test
@@ -144,6 +144,8 @@ public class ChatbotTest
 		assertTrue("Political Topic check", sampleBot.getPoliticalTopicList().contains("election"));
 		assertTrue("Political Topic check", sampleBot.getPoliticalTopicList().contains("Ken Bone"));
 		assertTrue("Political Topic check", sampleBot.getPoliticalTopicList().contains("James Falls"));
+		assertTrue("Political Topic check", sampleBot.getPoliticalTopicList().contains("Obama"));
+		assertTrue("Political Topic check", sampleBot.getPoliticalTopicList().contains("Aleppo"));
 
 	}
 
