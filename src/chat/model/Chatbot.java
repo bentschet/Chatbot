@@ -64,7 +64,7 @@ public class Chatbot
 	{
 		boolean hasContent = false;
 		
-		if (currentInput != null && currentInput.contains("Language"))
+		if (currentInput != null && currentInput.contains(content))
 		{
 			hasContent = true;
 		}
