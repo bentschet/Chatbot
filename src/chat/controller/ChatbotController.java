@@ -39,6 +39,11 @@ public class ChatbotController
 	    	answer += "\nNice meme, buddy\n";
 	    }
 	    
+	    if(stupidBot.politicalTopicChecker(input))
+	    {
+	    	answer += "\nDon't get all political on me\n";
+	    }
+	    
 	    if(input.length() == 0)
 	    {
 	    	answer += "Sorry, I don't know about " + input;
