@@ -30,7 +30,15 @@ public class Chatbot
 	
 	private void buildMemesList()
 	{
-		
+		memesList.add("harambe");
+		memesList.add("willy wonka");
+		memesList.add("doge");
+		memesList.add("cute animals");
+		memesList.add("grumpy cat");
+		memesList.add("john cena");
+		memesList.add("dat boi");
+		memesList.add("ken bone");
+		memesList.add("illegal memes");
 	}
 	
 	private void buildPoliticalTopicsList()
