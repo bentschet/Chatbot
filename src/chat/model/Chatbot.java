@@ -39,11 +39,39 @@ public class Chatbot
 		memesList.add("dat boi");
 		memesList.add("ken bone");
 		memesList.add("illegal memes");
+		memesList.add("b0ss");
+		memesList.add("look at it go");
+		memesList.add("loss comic");
+		memesList.add("burself");
+		memesList.add("ppap");
+		memesList.add("pen pineapple apple pen");
+		memesList.add("clickhole");
+		memesList.add("long boy");
+		memesList.add("kilroy was here");
+		memesList.add("skeleton war");
+		
 	}
 	
 	private void buildPoliticalTopicsList()
 	{
-		
+		politicalTopicList.add("election");
+		politicalTopicList.add("Democrat");
+		politicalTopicList.add("Republican");
+		politicalTopicList.add("liberal");
+		politicalTopicList.add("conservative");
+		politicalTopicList.add("Clinton");
+		politicalTopicList.add("Trump");
+		politicalTopicList.add("Kaine");
+		politicalTopicList.add("Pence");
+		politicalTopicList.add("11/8/2016");
+		politicalTopicList.add("Stein");
+		politicalTopicList.add("Johnson");
+		politicalTopicList.add("James Falls");
+		politicalTopicList.add("Misty K Snow");
+		politicalTopicList.add("Ken Bone");
+		politicalTopicList.add("Aleppo");
+		politicalTopicList.add("White House");
+		politicalTopicList.add("Obama");
 	}
 	
 	/**
@@ -89,7 +117,13 @@ public class Chatbot
 	{
 		boolean hasPoliticalTopic = false;
 		
-		
+		for(int index = 0; index < politicalTopicList.size(); index++)
+		{
+			if(currentInput.equals(politicalTopicList.get(index)))
+			{
+				hasPoliticalTopic = true;
+			}
+		}
 		
 		return hasPoliticalTopic;
 	}
@@ -104,7 +138,13 @@ public class Chatbot
 	{
 		boolean hasMeme = false;
 		
-		
+		for(int index = 0; index < memesList.size(); index++)
+		{
+			if(currentInput.equals(memesList.get(index)))
+			{
+				hasMeme = true;
+			}
+		}
 		
 		return hasMeme;
 	}
