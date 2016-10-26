@@ -81,6 +81,8 @@ public class Chatbot
 	{
 		boolean hasPoliticalTopic = false;
 		
+		
+		
 		return hasPoliticalTopic;
 	}
 	
@@ -93,6 +95,8 @@ public class Chatbot
 	public boolean memeChecker(String currentInput)
 	{
 		boolean hasMeme = false;
+		
+		
 		
 		return hasMeme;
 	}
@@ -140,5 +144,25 @@ public class Chatbot
 	public void setContent(String content)
 	{
 		
+	}
+
+	public boolean inputHTMLChecker(String currentInput)
+	{
+		return false;
+	}
+
+	public boolean keyboardMashChecker(String currentInput)
+	{
+		return false;
+	}
+
+	public boolean twitterChecker(String currentInput)
+	{
+		return false;
+	}
+
+	public boolean quitChecker(String currentInput)
+	{
+		return false;
 	}
 }

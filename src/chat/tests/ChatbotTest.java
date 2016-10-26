@@ -2,12 +2,9 @@ package chat.tests;
 
 import static org.junit.Assert.*;
 
-import java.util.ArrayList;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
 import chat.model.Chatbot;
 
 /**
@@ -112,15 +109,7 @@ public class ChatbotTest
 		assertTrue("Meme Topic check", sampleBot.getMemesList().contains("willy wonka"));
 		assertTrue("Meme Topic check", sampleBot.getMemesList().contains("harambe"));
 		assertTrue("Meme Topic check", sampleBot.getMemesList().contains("john cena"));
-		assertTrue("Meme Topic check", sampleBot.getMemesList().contains("pepe"));
-		assertTrue("Meme Topic check", sampleBot.getMemesList().contains("long boi"));
-		assertTrue("Meme Topic check", sampleBot.getMemesList().contains("ken bone"));
-		assertTrue("Meme Topic check", sampleBot.getMemesList().contains("over 9000"));
-		assertTrue("Meme Topic check", sampleBot.getMemesList().contains("aesthetics"));
-		assertTrue("Meme Topic check", sampleBot.getMemesList().contains("vaporwave"));
-		assertTrue("Meme Topic check", sampleBot.getMemesList().contains("ratatoing"));
-		assertFalse("Meme Topic check", sampleBot.getMemesList().contains("ratatouille"));
-		assertTrue("Meme Topic check", sampleBot.getMemesList().contains("DJ Khaled"));
+
 	}
 	
 	@Test
@@ -142,10 +131,6 @@ public class ChatbotTest
 		assertTrue("Political Topic check", sampleBot.getPoliticalTopicList().contains("Stein"));
 		assertTrue("Political Topic check", sampleBot.getPoliticalTopicList().contains("Johnson"));
 		assertTrue("Political Topic check", sampleBot.getPoliticalTopicList().contains("election"));
-		assertTrue("Political Topic check", sampleBot.getPoliticalTopicList().contains("Ken Bone"));
-		assertTrue("Political Topic check", sampleBot.getPoliticalTopicList().contains("James Falls"));
-		assertTrue("Political Topic check", sampleBot.getPoliticalTopicList().contains("Obama"));
-		assertTrue("Political Topic check", sampleBot.getPoliticalTopicList().contains("Aleppo"));
 
 	}
 
