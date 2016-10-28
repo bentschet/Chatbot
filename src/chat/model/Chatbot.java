@@ -23,8 +23,10 @@ public class Chatbot
 	{
 		this.memesList = new ArrayList<String>();
 		this.userName = new String(userName);
+		this.politicalTopicList = new ArrayList<String>();
 		this.content = new String("Language");
 		this.buildMemesList();
+		this.buildPoliticalTopicList();
 		
 	}
 	
@@ -45,14 +47,14 @@ public class Chatbot
 		memesList.add("burself");
 		memesList.add("ppap");
 		memesList.add("pen pineapple apple pen");
-		memesList.add("clickhole");
+		memesList.add("scoot the burbs");
 		memesList.add("long boy");
 		memesList.add("kilroy was here");
 		memesList.add("skeleton war");
 		
 	}
 	
-	private void buildPoliticalTopicsList()
+	private void buildPoliticalTopicList()
 	{
 		politicalTopicList.add("election");
 		politicalTopicList.add("Democrat");
@@ -101,6 +103,7 @@ public class Chatbot
 		boolean hasContent = false;
 		
 		if (currentInput != null && currentInput.contains(content))
+		//if (currentInput.toLowerCase().contains(content.toLowerCase()))
 		{
 			hasContent = true;
 		}
